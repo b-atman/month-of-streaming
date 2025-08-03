@@ -3,13 +3,25 @@ name = "month-of-streaming"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Atman",email = "atmanitaliya123@gmail.com"}
+    {name = "Atman", email = "atmanitaliya123@gmail.com"}
 ]
 readme = "README.md"
 requires-python = "^3.10"
 dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn[standard] (>=0.35.0,<0.36.0)",
+    "sqlalchemy (>=2.0.42,<3.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "email-validator (>=2.2.0,<3.0.0)"
 ]
 
+[tool.poetry]
+packages = [
+    { include = "user_profile_service" }
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

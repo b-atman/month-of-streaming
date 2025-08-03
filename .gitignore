@@ -1,0 +1,19 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+.env/
+
+# Node modules (Backstage)
+**/node_modules/
+backstage-playground/
+
+# IDE / System files
+.vscode/
+.DS_Store
+
+# Docker artifacts
+.dockerignore
